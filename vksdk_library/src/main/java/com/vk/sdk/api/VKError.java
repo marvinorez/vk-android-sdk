@@ -170,7 +170,7 @@ public class VKError extends VKObject {
 		StringBuilder errorString = new StringBuilder("VKError (");
 		switch (this.errorCode) {
 			case VK_API_ERROR:
-				errorString.append("API error: ").append(apiError.toString());
+				errorString.append("API error: ").append(String.valueOf(apiError));
 				break;
 			case VK_CANCELED:
 				errorString.append("Canceled");
